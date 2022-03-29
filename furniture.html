@@ -5,33 +5,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    #furniture{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:auto;
+        /* border: 1px solid red; */
+        gap: 15px;
+        width: 97%;
+        margin: auto;
+
+     }
+    h2{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #furniture img{
+        width: 100%;
+        margin: 0px;
+    }
+    #furniture > div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #furniture p{
+        text-align: center;
+        background-color: #f5f6f7;
+        color: #2f3337;
+        margin: 0px;
+        padding: 10px 0px;
+        box-sizing: border-box;
+    }
+    #Tips{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:auto;
+        /* border: 1px solid red; */
+        gap: 15px;
+        width: 97%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+
+     }
+     #Tips h3{
+         margin-bottom: 20px;
+         margin-top: 20px;
+         padding: 10;
+         font-size: 20px;
+         font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+     }
+
+     #Tips p{
+        font-size: 14px;
+        line-height: 21px;
+        padding: 8px;
+       font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+     }
+     button{
+    margin-top: 24px;
+    align-items: center;
+    border-color: #2f3337;
+    color: #2f3337;
+    display: inline-flex;
+    height: 44px;
+    justify-content: center;
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+   }
+    </style>
 </head>
 <body>
-    <h1>Furniture</h1>
-    <br><br>
-    <h2>Featured Categories</h2>
-
-    <p>Living Room Furniture</p>
-    <p>Dining Room Furniture</p>
-    <p>Bedroom Furniture</p>
-    <p>Patio Furniture</p>
-    <p>Kitchen Furniture</p>
-    <p>Entryway Furniture</p>
-    <p>Home Office Furniture</p>
-    <p>Small Space Furniture</p>
-    <p>Bathroom Furniture</p>
-    <p>Mattresses</p>
-    <p>Recreation Room</p>
-    <p>Kids & Toddler Furniture</p>
-    <p>Home Gym</p>
-
-    <h3>Shop All Furniture on Sale</h3>
+    <h2>Popular Furniture Categories</h2>
+    <div id="furniture">
+        <div>
+             <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_PopCat_1.jpg?imwidth=400&impolicy=medium"alt=""/>
+            <p>Patio Furniture</p>
+            </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_PopCat_2.jpg?imwidth=400&impolicy=medium">
+            <p>Living Room Furniture</p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_PopCat_3.jpg?imwidth=400&impolicy=medium">
+            <p>Dining Room Furniture</p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_PopCat_4.jpg?imwidth=400&impolicy=medium">
+            <p>Bedroom Furniture</p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/09062021_FALL2021_Furni_PopCat_10.jpg?imwidth=400&impolicy=medium">
+            <p> Mattresses</p>
+        </div>
+        <div> 
+        <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_PopCat_6.jpg?imwidth=400&impolicy=medium">
+         <p>Home Office Furniture </p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_FURNITURE_PopCat_6_SmallSpaceFurniture.jpg?imwidth=400&impolicy=medium">
+            <p>Small Space Furniture</p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_FURNITURE_PopCat_7_KitchenFurniture.jpg?imwidth=400&impolicy=medium">
+            <p>Kitchen Furniture</p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_PopCat_9.jpg?imwidth=400&impolicy=medium">
+            <p></p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_PopCat_10.jpg?imwidth=400&impolicy=medium">
+            <p></p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/09062021_FALL2021_Furni_PopCat_11.jpg?imwidth=400&impolicy=medium">
+            <p></p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_PopCat_12.jpg?imwidth=400&impolicy=medium">
+            <p></p>
+        </div>
+    </div>
+    <!-- New row -->
+    <div id="Tips">
+        <div>
+               <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_FURNI_688x444_BG01.jpg?imwidth=1024&impolicy=medium">
+       </div>
+       
+         
+       <div>
+               <h2>How to Decorate With a Chaise Loung </h2>
+               <p>
+                Self-indulgent and relaxing chaise lounge chairs embody the mantra, treat yourself! You may picture old Hollywood glamor or Victorian parlors when you think of chaise lounges. But these luxurious long chairs can neatly fit into any decor scheme, be it mid-mod or farmhouse chic. Whether for the foot of your bed or a reading nook in the living room, these tips will help you find a trendy chaise lounge for your home.
+               </p>
+              <button>Read More</button>
+       </div>
+       </div>
+       <!-- New row -->
+       <div id="Tips">
+        <div>
+            <h2>
+                Home Office Ideas on a Budget
+            </h2>
+            <p>
+                Many of us are working from home for the foreseeable future - and looking to keep some cash in reserve. The privacy, the productivity…we’re all missing a few perks of the professional workspace. These office decor tips will help you set up a productive home office without breaking the bank
+            </p>
+           <button>Read More</button>
+      </div>
+       <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_RUGS_688x444_BG02.jpg?imwidth=1024&impolicy=medium">        
+       </div>
+       </div>
     
-
-    
-
-
-
-
 </body>
 </html>

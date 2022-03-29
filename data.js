@@ -174,7 +174,7 @@ var garden=[
    {
     imageurl:"https://ak1.ostkcdn.com/images/products/is/images/direct/92e8e8a36e87cb6935ea78091b041debff5e710b/Brookside%C2%A0Iris%C2%A0Rattan-Outdoor-Seating-Set%C2%A0with-Patio-Table%C2%A0.jpg?imwidth=480&impolicy=medium",
     price:23137,
-    rating4.1:,
+    rating: 4.1,
     name:"Brookside Iris Rattan Outdoor Seating Set"
    },
 

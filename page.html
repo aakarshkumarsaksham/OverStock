@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/e9a5a74c45.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <link rel="stylesheet" href="./style/index.css" /> -->
+    <link rel="stylesheet" href="./style/page.css" />
     <link rel="stylesheet" href="./style/common.css" />
     <title>Document</title>
   </head>
@@ -99,6 +99,16 @@
         <li class="crimson">Sales & Deals</li>
       </ul>
     </nav>
+
+    <!-- main content starts from here -->
+
+    <main>
+        <div id="product">
+
+        </div>
+    </main>
+
+    <!-- main content ends here -->
     <footer>
       <div id="footlinks">
           <ul>
@@ -150,3 +160,96 @@
     </footer>
   </body>
 </html>
+
+<script>
+
+    var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+    var pageData = JSON.parse(localStorage.getItem("pageData"))
+    var product = document.querySelector("#product");
+
+    var img = document.createElement("img");
+    img.src = pageData.img;
+    img.style.border = "1px solid #dadcdf";
+    
+    var div = document.createElement("div");
+    div.id = "prodInfo";
+
+    var prodName = document.createElement("p");
+    prodName.innerText = pageData.name;
+
+    var rating = document.createElement("span");
+    rating.className = "rating";
+    rating.innerText = pageData.rating;
+    rating.style.padding = "5px 10px";
+    rating.style.color = "white";
+    rating.style.backgroundColor = "green";
+    rating.style.width = "fit-content";
+    rating.style.borderRadius = "5px";
+
+    var price = document.createElement("p");
+    price.innerHTML = `Sale<sup style="font-size: 12px">INR</sup>${pageData.price}`;
+    price.style.color = "#ac1b25";
+
+    var div2 = document.createElement("div");
+    div2.id = "selectCart"
+    var select = document.createElement("select");
+    var opt1 = document.createElement("option");
+    opt1.value = "1";
+    opt1.innerText = "Quantitiy: 1";
+    var opt2 = document.createElement("option");
+    opt2.value = "2";
+    opt2.innerText = "Quantitiy: 2";
+    var opt3 = document.createElement("option");
+    opt3.value = "3";
+    opt3.innerText = "Quantitiy: 3";
+    var opt4 = document.createElement("option");
+    opt4.value = "4";
+    opt4.innerText = "Quantitiy: 4";
+    var opt5 = document.createElement("option");
+    opt5.value = "5";
+    opt5.innerText = "Quantitiy: 5";
+
+    select.append(opt1,opt2,opt3,opt4,opt5);
+    select.style.padding = "5px 10px";
+    select.style.width = "45%";
+
+
+    var btn = document.createElement("button");
+    btn.innerText = "Add to Cart";
+    btn.addEventListener("click",addToCart);
+
+    btn.style.width = "45%";
+    btn.style.padding = "5px 10px";
+
+    btn.style.backgroundColor = "green";
+    btn.style.color = "white";
+    btn.style.border = "none";
+    btn.style.borderRadius = "2px";
+
+    div2.append(select,btn);
+    div2.style.display = "flex";
+    div2.style.justifyContent = "space-between";
+    div2.style.width = "100%";
+    div.append(prodName,rating,price,div2);
+    div.style.display = "flex";
+    div.style.flexDirection = "column";
+    div.style.gap = "20px"
+    div.style.padding = "0 30px";
+
+    product.append(img,div);
+
+
+    function addToCart(){
+        var qty = document.querySelector("select").value;
+        var obj = {
+            img : pageData.image,
+            rating: pageData.rating,
+            name : pageData.name,
+            price : pageData.price,
+            qty : Number(qty)
+        }
+        cartData.push(obj);
+        localStorage.setItem("cartData",JSON.stringify(cartData));
+        alert("Item added to cart");
+    }
+</script>

@@ -18,6 +18,10 @@ main{
     font-size: 20px;
     
 }
+
+select{
+    width: fit-content;
+}
 #prodInfo {
     display: flex;
     flex-direction: column;

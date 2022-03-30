@@ -164,7 +164,7 @@
 <script>
 
     var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
-    var pageData = JSON.parse(localStorage.getItem("pageData"))
+    var pageData = JSON.parse(localStorage.getItem("pageData"));
     var product = document.querySelector("#product");
 
     var img = document.createElement("img");
@@ -211,7 +211,7 @@
 
     select.append(opt1,opt2,opt3,opt4,opt5);
     select.style.padding = "5px 10px";
-    select.style.width = "45%";
+    select.style.width = "fit-content";
 
 
     var btn = document.createElement("button");
@@ -236,20 +236,26 @@
     div.style.gap = "20px"
     div.style.padding = "0 30px";
 
+    div.style.minWidth = "450px"
+
     product.append(img,div);
+    // console.log(pageData)
 
 
     function addToCart(){
         var qty = document.querySelector("select").value;
         var obj = {
-            img : pageData.image,
+            img : pageData.img,
             rating: pageData.rating,
             name : pageData.name,
             price : pageData.price,
             qty : Number(qty)
         }
         cartData.push(obj);
+        console.log(cartData)
         localStorage.setItem("cartData",JSON.stringify(cartData));
         alert("Item added to cart");
     }
 </script>
+
+<script src="./script/common.js"></script>

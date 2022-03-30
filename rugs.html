@@ -4,17 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/e9a5a74c45.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./style/rugs.css" />
-    <link rel="stylesheet" href="./style/common.css" />
-    <title>Document</title>
+    <title>Rugs</title>
+    <script src="https://kit.fontawesome.com/e9a5a74c45.js" crossorigin="anonymous"></script>
   </head>
+  <link rel="stylesheet" href="./style/navContainer.css">
+  <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+        }
+    #Rugs{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:auto;
+        /* border: 1px solid red; */
+        gap: 15px;
+        width: 97%;
+        margin: auto;
+
+     }
+     #Tips{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:auto;
+        gap: 15px;
+        width: 97%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+
+     }
+     #Tips h3{
+         margin-bottom: 20px;
+         margin-top: 20px;
+         padding: 10;
+     }
+
+     #Tips p{
+        font-size: 14px;
+        line-height: 21px;
+       font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+     }
+     button{
+    margin-top: 24px;
+    align-items: center;
+    background-color:white;
+    color: #2f3337;
+    display: inline-flex;
+    height: 44px;
+    justify-content: center;
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid#2f3337 ;
+   }
+    
+    h2{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #Rugs img{
+        width: 100%;
+        margin: 0px;
+    }
+    #Rugs > div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #Rugs p{
+        text-align: center;
+        background-color: #f5f6f7;
+        color: #2f3337;
+        margin: 0px;
+        padding: 10px 0px;
+        box-sizing: border-box;
+    }
+    </style>
   <body>
-      <div id="head">
-          <header>
+
+    <!-- Nav Bar  -->
+    <header>
       <svg height="32" width="181" color="#FF1F2C" viewBox="0 0 164 29">
         <g fill="none" fill-rule="evenodd">
           <g fill="#000">
@@ -101,36 +172,124 @@
         <li class="crimson">Sales & Deals</li>
       </ul>
     </nav>
+   <div id="main_content">
+    <div id="heading"><h1>Rugs</h1></div>
+    <div id="mid_container">
+      <div class="box1">
+        <h2>Featured Categories</h2> 
+
+        <p>One of a Kind Rugs</p>
+        <p>Rug Pads</p>
+        <p>Shag Rugs</p>
+        <p>Kitchen Rugs & Mats</p>
+        <p>Stair Treads</p>
+        <p>One of a Kind Rugs</p>
+        <p>Machine Washable</p>
+        <p>Handmade Rugs</p>
+        <p>Flat Weave Rugs</p>
+        <p>Outdoor Rugs</p>
+        <p>Runner Rugs</p>
+        <p>Kids & Tween Rugs</p>  
+        <p>Door Mats</p>
+        <p>Bath Mats & Rugs</p>
+        <p>Persian Rugs</p>
+        <p>Shop New Arrivals</p>
+        <p>Shop All Rugs on Sale</p>
       </div>
-    
-    <!-- main content starts from here -->
-
-    <main>
-        <h1>Furniture Sale</h1>
-        <div id="cardFilter">
-            <div id="sort">
-                <label for="sort">Sort By:</label>
-                <select name="sort" id="sortBy">
-                <option value="--">-- Sort By --</option>
-                <option value="lowToHigh">Price: Low to High</option>
-                <option value="highToLow">Price: High to Low</option>
-                <option value="rating">Product Rating</option>
-            </select>
-            </div>
-            
-            <div id="filterAndCards">
-                <div id="filter">
-                    <h2>Filtered By</h2>
-                    <span>On Sale<i class="fa-solid fa-xmark"></i></span>
-                </div>
-                <div id="cardsContainer">
-
-                </div>
-            </div>
+      <div id="box2">
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03212022_Desktop_Rugs_Safavieh.jpg?imwidth=680&impolicy=medium?imwidth=750"
+          alt=""
+        />
+      </div>
+      <div>
+        <!-- box3 -->
+      </div>
+      <div class="box4">
+          <div class="bgc_div">
+            <p class="lowText noHover">Shop All </p>
+            <p class="boldText noHover">Area Rugs</p>
+            <img class= "miniImage"src="https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_RUGS_MM_01.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
         </div>
-    </main>
+          <div class="bgc_div">
+         
+            <img class="miniImage" src="https://ak1.ostkcdn.com/img/mxc/12202021_WINTER2022_RUGS_MM_02.png?imwidth=320&impolicy=medium?imwidth=384" alt="">
+            <p class="lowText noHover">Save On </p>
+            <p class="boldText noHover">Rug Deals</p>
+        </div>
+      </div>
+    </div>
+    <h2>Shop Popular Rug Sizes</h2>
+      <div id="Rugs">
+      <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX1_3x5-480x480_2.png?imwidth=400&impolicy=medium"alt=""/>
+            <p>3'X 5' Area Rugs</p>
+    </div>
+    <div>
+          <img src="https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX2_4x6-480x480_2.png?imwidth=400&impolicy=medium">
+          <p>4'X 6' Area Rugs</p>
+    </div>
+    <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX3_5x8-480x480_2.png?imwidth=400&impolicy=medium">
+        <p>5'X 8' Area Rugs</p>
+    </div>
+    <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_TOPTAX4_6x9-480x480_2.png?imwidth=400&impolicy=medium">
+        <p>10'X 14' Area Rugs</p>
+    </div>
+    
+     <!-- <div> <h2>Shop Popular Rug Styles</h2></div> -->
+     <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXB1_Bohemian-Eclectic-lifestyle-336x336.png?imwidth=400&impolicy=medium">
+        <p>Bohemian & Eclectic Area Rugs</p>
+    </div>
+    <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXB2_Modern-Contemporary-lifestyle-336x336.png?imwidth=400&impolicy=medium">
+        <p>Modern & Contemporary Area Rugs</p>
+    </div>
+    <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXB3_Vintage-336x336.png?imwidth=400&impolicy=medium">
+        <p>Vintage Area Rugs</p>
+    </div>
+    <div>
+        <img src="https://ak1.ostkcdn.com/img/mxc/03212022_RUGS_MULTITAXB4_Shag-336x336.png?imwidth=400&impolicy=medium">
+        <p> Shag Area Rugs</p>
+    </div>
+    </div>
 
-    <!-- main content ends here -->
+       <!-- new row -->
+   <div id="Tips">
+     <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_RUGS_688x444_BG01.jpg?imwidth=1024&impolicy=medium">
+    </div>
+    
+      
+    <div>
+            <h2>
+                Tips on Buying the Best Outdoor Rug
+            </h2>
+            <p>
+                Whether for your porch, your patio, or even your living room, outdoor rugs are built to last. With so many stylish yet functional outdoor rugs available, you may not know which rug is best for you. Let these tips for finding weather-resistant and waterproof outdoor rugs be your guide to your most stylish patio yet.
+            </p>
+           <button>Read More</button>
+    </div>
+    </div>
+    <!-- New row -->
+    <div id="Tips">
+        <div>
+            <h2>
+                Top 10 Boho Rugs
+            </h2>
+            <p>
+                Both casual and inviting, boho style exudes worldly flair. Whether you're a full-fledged bohemian or are just itching for some extra color in your spring decor, a boho rug is an easy way to inject your space with some free-spirited personality. Read on for our top 10 favorite boho rugs.
+            </p>
+           <button>Read More</button>
+      </div>
+       <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/03242022_SPRING2022_RUGS_688x444_BG02.jpg?imwidth=1024&impolicy=medium">        
+       </div>
+       </div>
+  </div>
     <footer>
       <div id="footlinks">
           <ul>
@@ -183,6 +342,5 @@
   </body>
 </html>
 
-<script src="./script/furniturecards.js"></script>
 
 <script src="./script/common.js"></script>

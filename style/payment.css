@@ -1,0 +1,11 @@
+main{
+    width: 100%;
+    background-color: white;
+}
+
+#bill{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    border: 1px solid #dadcdf;
+}

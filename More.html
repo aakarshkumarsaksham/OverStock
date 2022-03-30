@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script
       src="https://kit.fontawesome.com/e9a5a74c45.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./style/rugs.css" />
     <link rel="stylesheet" href="./style/common.css" />
-    <title>Document</title>
-  </head>
-  <body>
-      <div id="head">
-          <header>
+    <style>
+        *{ box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family:Helvetica,Arial,sans-serif;
+        }
+        body{
+            background-color: white;
+        }
+     h2{
+       padding: 20,10px;
+       color: #2f3337;
+       font: 20px;
+       margin-top: 20px;
+      }
+    #Tips{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:auto;
+        /* border: 1px solid red; */
+        gap: 15px;
+        width: 97%;
+        margin: auto;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+     }
+     #Tips h4{
+        color: #2f3337;
+       display: inline-block;
+       font-weight: 900;
+       font-size: 16px;
+       margin: 0 0 0 -5px;
+     } 
+     #Tips p1{
+    color: #c7202c;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 0 0 0 -5px;
+
+     }
+
+     #Tips p{
+        font: 16px;
+        /* line-height: 21px; */
+        padding: 5px 0px;
+       font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+       color: #545658;}
+
+       #head + h2{
+           margin-left: 30px;
+       }
+    </style>
+</head>
+<body>
+    <div id="head">
+      <header>
       <svg height="32" width="181" color="#FF1F2C" viewBox="0 0 164 29">
         <g fill="none" fill-rule="evenodd">
           <g fill="#000">
@@ -88,8 +142,7 @@
         <li>Decor</li>
         <li>Bed & Bath</li>
         <li>Home Improvement</li>
-        <li>Kitchen</li>
-        <li>Outdoor</li>
+        <li>Kitchen Outdoor</li>
         <li>Jewelry</li>
         <li>Lighting</li>
         <li>Kids & Baby</li>
@@ -101,88 +154,105 @@
         <li class="crimson">Sales & Deals</li>
       </ul>
     </nav>
-      </div>
-    
-    <!-- main content starts from here -->
-
-    <main>
-        <h1>Furniture Sale</h1>
-        <div id="cardFilter">
-            <div id="sort">
-                <label for="sort">Sort By:</label>
-                <select name="sort" id="sortBy">
-                <option value="--">-- Sort By --</option>
-                <option value="lowToHigh">Price: Low to High</option>
-                <option value="highToLow">Price: High to Low</option>
-                <option value="rating">Product Rating</option>
-            </select>
-            </div>
-            
-            <div id="filterAndCards">
-                <div id="filter">
-                    <h2>Filtered By</h2>
-                    <span>On Sale<i class="fa-solid fa-xmark"></i></span>
-                </div>
-                <div id="cardsContainer">
-
-                </div>
-            </div>
+    </div>
+   
+       <!-- New row -->
+       <h2>Shop All Categories</h2>
+       <div id="Tips">
+       <div> 
+ <h4>Baby</h4>
+       <p> Baby Bedding</p>
+       <p>  Baby Furniture</p>
+       <p> Nursery Decor</p>
+ <h4>Bedding & Bath</h4>
+       <p>Bath & Towels</p>
+       <p>Bedding Basics</p>
+       <p>Bedding</p>
+       <p>Mattresses</p>
+       <p>Kids Bedding</p>
+       <p>Blankets & Throws</p>
+       <p>Comforters & Duvet Inserts</p>
+       <p>Mattress Pads & Toppers</p>
+       <p>Pillows</p>
+       <p>Sheets & Pillowcases</p>
+       <p>Comforter Sets</p>
+       <p>Quilts & Coverlets</p>
+       <p>Bedspreads</p>
+       <p>Duvet Covers</p>
+       <p>Bath Linens</p>
+       <p>Bed Pillows</p>
+       <p>Bathroom Accessories</p>
+   <h4> Holiday & Gifts</h4>
+      <p>Valentines Day</p>
+      <p>Easter</p>
+      <p>Mother's Day</p>
+      <p>Father's Day</p>
+      <p>Gifting Ideas</p>
         </div>
-    </main>
 
-    <!-- main content ends here -->
-    <footer>
-      <div id="footlinks">
-          <ul>
-              <li><h2>MY ACCOUNT</h2></li>
-              <li>Orders & Returns</li>
-              <li>Email Preferences</li>
-              <li>Account Settings</li>
-          </ul>
-          <ul>
-              <li><h2>LET US HELP</h2></li>
-              <li>Customer Care</li>
-              <li>Shipping Information</li>
-              <li>Return Policy</li>
-              <li>International Help</li>
-              <li>Accessibility</li>
-          </ul>
-          <ul>
-              <li><h2>COMPANY INFORMATION</h2></li>
-              <li>About Overstock™</li>
-              <li>Contact Us</li>
-              <li>Careers</li>
-              <li>Investors Relations</li>
-              <li>Sell Your Products</li>
-              <li>Supply Chain Transparency</li>
-          </ul>
-          <ul>
-              <li><h2>MORE WAYS TO HELP</h2></li>
-              <li>Tips & Ideas</li>
-              <li>Deals</li>
-              <li>Clearance</li>
-              <li>New Arrivals</li>
-          </ul>
-      </div>
-      <div id="endCredits">
-          <div id="address">
-              <p>© Copyright 2022, Overstock.com®, Inc.</p>
-              <p>799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
-          </div>
-          <div id="additionalLinks">
-              <ul>
-                  <li>Privacy Policy</li>
-                  <li>Terms & Conditions</li>
-                  <li>*Promotion Terms</li>
-                  <li>Ship To: <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""></li>
-              </ul>
-          </div>
-          
-      </div>
-    </footer>
-  </body>
+       <div> 
+   <h4>For The Home</h4>
+       <p>Art Gallery</p>
+       <p>Garden & Patio</p>
+       <p> Home Improvement</p>
+       <p>Housewares</p>
+       <p>Kitchen & Dining</p>      
+       <p>Tools</p>
+       <p> Storage & Organization</p>
+       <p> Appliances</p>
+   <h4>Furniture</h4>
+       <p>Bathroom Furniture</p>
+        <p>Bedroom Furniture</p>
+       <p>Dining Room & Bar Furniture</p>
+       <p>Home Office Furniture</p>
+       <p>Kids' & Toddler Furniture</p>
+       <p>Living Room Furniture</p>
+       <p>Patio & Outdoor Furniture</p>
+   <h4> Home Decor</h4>
+       <p>Area Rugs</p>
+        <p>Decorative Accessories</p>
+        <p>Lighting</p>
+        <p>Slipcovers & Furniture Covers</p>
+        <p>Window Treatments</p>
+        <p>Wall Decor</p>
+         <p>Throw Pillows</p>
+         <p>Outdoor Décor</p>
+         <p>Accent Pieces</p>
+    <h4>Jewelry & Watches</h4>
+           
+    </div>
+       <div>
+         <p>Birthstone Jewelry</p>
+         <p>Bracelets</p>
+         <p>Children's Jewelry</p>
+        <p>Designer Jewelry</p>
+        <p>Earrings</p>
+       <p>Fashion Jewelry</p>
+       <p>Jewelry Boxes</p>
+       <p>Jewelry Sets</p>
+      <p>Men's Jewelry</p>
+      <p>Necklaces</p>
+      <p>Personalized Jewelry</p>
+      <p>Rings</p>
+      <p>Wedding Rings</p>
+      <p>Kid's Watches</p>
+      <p>Men's Watches</p>
+      <p>Jewelry Boxes</p>
+ <h4> Pet Supplies</h4>
+       <p>Bird Supplies</p>
+       <p>Cat Supplies</p>
+       <p>Dog Supplies</p>
+       <p>Fish Supplies</p>
+       <p>Small Animal Supplies</p>
+  <h4>Sports & Toys</h4>
+       <p>Outdoor Equipment</p>
+       <p>Recreation Room</p>
+       <p>Sports & Fitness Equipment</p>
+       <p>Toys & Hobbies</p>
+      <p1> Sales & Deals</p1>
+    </div>
+       </div>
+    
+</body>
 </html>
-
-<script src="./script/furniturecards.js"></script>
-
 <script src="./script/common.js"></script>

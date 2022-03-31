@@ -13,6 +13,7 @@ body{
     position: sticky;
     top: 0;
     padding: 0 0 0.25px 0;
+    z-index: 2;
 }
 
 header{
@@ -60,12 +61,12 @@ header input{
 .search-icon{
     font-size: 19px;
     height: 100%;
-    background-color: #ff1f2c;
+    background-color: #f13530;
     color: white;
     padding: 10px;
     margin: 0;
     border-radius:0 5px 5px 0;
-    border-bottom: 1px solid #ff1f2c;
+    border-bottom: 1px solid #f13530;
 }
 
 #user-account{

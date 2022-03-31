@@ -96,6 +96,10 @@ margin-bottom: 1px;
 
 }
 
+#mid_container h2{
+  text-align: left;
+}
+
 nav > ul:nth-child(1) {
 display: flex;
 width: 80%;

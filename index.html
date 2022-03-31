@@ -10,6 +10,176 @@
     ></script>
     <!-- <link rel="stylesheet" href="./style/index.css" /> -->
     <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <style>
+      *{
+            margin: 0px;
+            padding: 0px;
+            font-family:Helvetica,Arial,sans-serif;
+             }
+    #furniture{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:auto;
+        /* border: 1px solid red; */
+        gap: 15px;
+        width: 90%;
+        margin: auto;
+
+     }
+   
+    #furniture img{
+        width: 100%;
+        margin: 0px;
+    }
+    #furniture > div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 10px;
+        background-color: #f5f5f5;
+    }
+    #furniture p{
+        text-align: center;
+        background-color: #f5f6f7;
+        color: #2f3337;
+        margin: 0px;
+        /* padding: 10px 0px; */
+        box-sizing: border-box;
+    }
+ 
+     #Tips h3{
+         margin-bottom: 20px;
+         margin-top: 20px;
+         padding: 10;
+         font-size: 20px;
+     }
+
+     #Tips p{
+        font-size: 14px;
+        line-height: 21px;
+        padding: 8px;
+       font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+     }
+     button{
+    margin-top: 24px;
+    align-items: center;
+    background-color:white;
+    color: #2f3337;
+    display: inline-flex;
+    height: 44px;
+    justify-content: center;
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #2f3337 ;
+   }
+   #blur{
+       /* margin-top: 40px; */
+       padding: 20px;
+       margin: auto;
+       margin-bottom: 20px;
+   }
+   #blur img{
+       width: 100%;
+       margin-top: 50px;
+       margin-bottom: 20px;
+   }
+   #Brand{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:auto;
+        /* border: 1px solid red; */
+        gap: 10px;
+        width: 97%;
+        margin: auto;
+        margin-bottom: 10px;
+        
+
+     }
+     
+     #Brand > div{
+         background-color: #f5f5f5;
+     }
+     #Brand > div > img{
+         width: 100%;
+     }
+    #Brand h2{
+    color: #545658;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 0px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+   
+    
+   }
+   #Brand h3{
+        text-align: center;
+        margin: auto;
+        color: #2f3337;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 8px;
+       background-color: #f5f5f5;
+       flex-grow: 1;
+    }
+   #Brand p{
+    color: #2f3337;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #f5f5f5;
+    padding: 20px;
+   }
+   #furniture b{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font: 16px;
+    text-align: center;
+    background-color: #f5f6f7;
+    margin: 0;
+    flex-grow: 1;
+    padding: 10px 0 0;
+   }
+
+   #homebtn{
+    margin: auto;
+    align-items: center;
+    background-color: #2F3337;
+    color: #FFFFFF;
+    display:flex;
+    height: 44px;
+    justify-content: center;
+    width: 164px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #2f3337 ;
+    margin-top: 40px;
+   }
+   .Trend{
+       color: #2F3337;
+       text-align: center;
+        margin-bottom: 25px;
+        margin-top: 50px;
+        font-family: Helvetica;
+        font-size: 32px;
+        
+   }
+
+   #blur > img{
+     width: 100%;
+   }
+   #blur{
+     position: relative;
+   }
+   #overlay-img-4{
+     position: absolute;
+     left: 0;
+   }
+    </style>
     <title>Document</title>
   </head>
   <body>
@@ -107,6 +277,339 @@
         </ul>
       </nav>
     </div>
+    <main>
+      <div id="banner">
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03212022-HP-A1-INTL-1400x550.jpg"
+          alt=""
+          id="bg-img"
+        />
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03212022-HP-A1-INTL-V2-1400x550.svg"
+          alt=""
+          id="overlay-img"
+        />
+      </div>
+      <h1 id="limitedTimeDeals">Limited-Time Deals</h1>
+      <div id="limitedCards">
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/01242022_HB_CMS_1.svg?imwidth=1920"
+            alt=""
+          />
+          <h4>Select Rugs</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/03212022_INTL_HB_INTL_2.svg?imwidth=1920"
+            alt=""
+          />
+          <h4>Select Garden Patio</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/03212022_INTL_HB_INTL_3.svg?imwidth=1920"
+            alt=""
+          />
+          <h4>Select Furniture</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/03212022_US_HB_CMS_4.svg?imwidth=1920"
+            alt=""
+          />
+          <h4>Select Lighting & Ceiling Fans</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/03212022_INTL_HB_INTL_5.svg?imwidth=1920"
+            alt=""
+          />
+          <h4>Select Bedding & Bath</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/03212022_INTL_HB_INTL_6.svg?imwidth=1920"
+            alt=""
+          />
+          <h4>Huge Saving on Top-Rated Items</h4>
+        </div>
+      </div>
+      <h1 id="continueShopping">Continue Shopping for Your Living Room</h1>
+      <div id="continueCards">
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/shop_by_room_catg_living_room_sofas.jpg?imwidth=1920"
+            alt=""
+          />
+          <h4>Sofas & Loveseats</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/shop_by_room_catg_living_room_coffee.jpg?imwidth=1920"
+            alt=""
+          />
+          <h4>Coffee, Sofa & End Tables</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/shop_by_room_catg_living_room_sets.jpg?imwidth=1920"
+            alt=""
+          />
+          <h4>Living Room Sets</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/shop_by_room_catg_living_room_chairs.jpg?imwidth=1920"
+            alt=""
+          />
+          <h4>Living Room Chairs</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/shop_by_room_catg_living_room_entertainment.jpg?imwidth=1920"
+            alt=""
+          />
+          <h4>Entertainment Centers</h4>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/shop_by_room_catg_living_room_decorative.jpg?imwidth=1920"
+            alt=""
+          />
+          <h4>Decorative Accessories</h4>
+        </div>
+      </div>
+      <div id="banner-two">
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03212022-PatioPerfect_desktopv3.jpg?imwidth=1920"
+          alt=""
+        />
+        <img
+          src="https://ak1.ostkcdn.com/img/mxc/03212022-PatioPerfect_desktopv3.svg?imwidth=1920"
+          alt=""
+          id="overlay-img-2"
+        />
+      </div>
+      <h1 id="freshFinds">Fresh Finds in Each Category</h1>
+      <div id="freshCards">
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/11192021-CatSilo-Furniture.png?imwidth=1920"
+            alt=""
+          />
+          <p>Furniture</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-AreaRugs.png?imwidth=1920"
+            alt=""
+          />
+          <p>Area Rugs</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-BedBath.png?imwidth=1920"
+            alt=""
+          />
+          <p>Bed & Bath</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Decor.png?imwidth=1920"
+            alt=""
+          />
+          <p>Home Decor</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/CatSilo-Window-040721.jpg?imwidth=1920"
+            alt=""
+          />
+          <p>Window Treatments</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Kitchen.png?imwidth=1920"
+            alt=""
+          />
+          <p>Kitchen</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/11192021-CatSilo-Outdoor.png?imwidth=1920"
+            alt=""
+          />
+          <p>Outdoor</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/01112021-CatSilo-HomeImp.jpg?imwidth=1920"
+            alt=""
+          />
+          <p>Home Improvement</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Storage.png?imwidth=1920"
+            alt=""
+          />
+          <p>Storage</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/01112021-CatSilo-Mattresses.jpg?imwidth=1920"
+            alt=""
+          />
+          <p>Mattresses</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/11152021-CatSilo-Lighting.png?imwidth=1920"
+            alt=""
+          />
+          <p>Lighting</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://ak1.ostkcdn.com/img/mxc/CatSilo-AllDeals-040721.jpg?imwidth=1920"
+            alt=""
+          />
+          <p>Shop All Deals</p>
+        </div>
+      </div>
+      <h1>New Ways to Bring Home Spring</h1>
+      <div id="newWays">
+        <div class="card">
+          <img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_2.jpg?imwidth=1920" alt="">
+          <h2>Adirondack Chairs</h2>
+          <p>Refresh your outdoor seating with this lawn & patio classic.</p>
+        </div>
+        <div class="card">
+          <img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_V2_Editorial_Frame6.jpg?imwidth=1920" alt="">
+          <h2>Gazebos and Pergolas</h2>
+          <p>Add a little shade to any yard or garden with these beautiful structures.</p>
+        </div>
+        <div class="card">
+          <img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_1.jpg?imwidth=1920" alt="">
+          <h2>
+            Durable Outdoor Rugs
+          </h2>
+          <p>Treat your feel to patio comfort with these resilient rugs.</p>
+        </div>
+        <div class="card">
+          <img src="https://ak1.ostkcdn.com/img/mxc/03282022_HP_Editorial_Frame_7.jpg?imwidth=1920" alt="">
+          <h2>Ceiling Fans</h2>
+          <p>Keep you space comfy & conditoned all season long with stylish ceiling fans.</p>
+          
+        </div>
+      </div>
+      <div id="banner-three">
+        <img src="https://ak1.ostkcdn.com/img/mxc/03212022-SpringReadyStorage_desktop.jpg?imwidth=1920" alt="">
+        <img id="overlay-img-3" src="https://ak1.ostkcdn.com/img/mxc/03212022-SpringReadyStorage_desktop.svg?imwidth=1920" alt="">
+      </div>
+      <h1>Overstock Featured Brands</h1>
+    <div id="furniture">
+        <div>
+             <img src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_36046663.jpg?imwidth=1920"alt=""/>
+           <b>Extra 15% off</b>
+             <p>Select Rugs by</p>
+             <p>Artistic Weavers & More*</p>
+            </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_18977242.jpg?imwidth=1920">
+            <b>Extra 15% off</b>
+            <p>Select Furniture by</p>
+            <p>Flash Furniture*</p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_22687048.jpg?imwidth=1920">
+            <b>Extra 15% off</b>
+            <p>Select Decorative Rugs by</p>
+            <p>Unique Loom*</p>
+
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/C-Mod_HP_C_Mod_27417542.jpg?imwidth=1920">
+           <b>Save On</b>
+           <p>Select Home Goods by </p>
+           <p>Bush Furniture</p>
+        </div>
+        </div>
+        <!-- New Line -->
+        
+        <div id="blur" >
+            <img src="https://ak1.ostkcdn.com/img/mxc/030822-RIUpdate-Dsk.jpg?imwidth=1920">
+            <img src="https://ak1.ostkcdn.com/img/mxc/030822-RIUpdate-Dsk.svg?imwidth=1920" alt="" id="overlay-img-4">
+            <!-- <h3>Farmhouse</h3> -->
+        </div>
+        <!-- New line -->
+        <h1>We've Got Your Style</h1>
+        <div id="Brand">
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/030822-SBS-Farmhouse.jpg?imwidth=1920">
+             <h3>Farmhouse</h3>
+             <p>Country comforts abound in this fresh take on rustic home decor</p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/030822-SBS-Traditional.jpg?imwidth=1920">
+            <h3>Traditional</h3>
+            <p>Cozy designs, clean and classic, give this style it's signature appeal.</p>
+        </div>
+        <div>
+            <img src="https://ak1.ostkcdn.com/img/mxc/030822-SBS-MidCenMod.jpg?imwidth=1920">
+             <h3>Mid-Century Modern</h3>
+             <p>Retro meets modern chic in these clean lines and vbrant tones.</p>
+        </div>
+    </div>
+     <button id="homebtn">See All Styles</button>
+    <!-- New row -->
+      <h1 class="Trend">Trending Searches</h1>
+    <div id="Brand">
+        <div>
+            <h2>Outdoor Rugs</h2>
+        </div>
+        <div>
+            <h2>Gaming Chairs</h2>
+        </div>
+        <div>
+            <h2>Outdoors Furniture</h2>
+        </div>
+    </div>
+    <div id="Brand">
+        <div>
+            <h2>Shower Curtains</h2>
+        </div>
+        <div>
+            <h2>TV Stands</h2>
+        </div>
+        <div>
+            <h2>Coffee Tables</h2>
+        </div>
+    </div>
+    <div id="Brand">
+        <div>
+            <h2>Outddoor Sofas</h2>
+        </div>
+        <div>
+            <h2>Sectionals</h2>
+        </div>
+        <div>
+            <h2>Office Chairs</h2>
+        </div>
+    </div>
+    <div id="Brand">
+        <div>
+            <h2>Bar Stools</h2>
+        </div>
+        <div>
+            <h2>Computers Desk</h2>
+        </div>
+        <div>
+            <h2>Rugs</h2>
+        </div>
+    </div>
+    </main>
 
     <footer>
       <div id="footlinks">

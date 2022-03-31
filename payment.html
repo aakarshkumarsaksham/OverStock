@@ -173,7 +173,7 @@
   </body>
 </html>
 <script>
-   var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+  var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
   // console.log(cartData);
   displayData(cartData);
   function displayData(cartData) {
@@ -227,7 +227,6 @@
       select.style.color = "white";
       select.style.padding = "10px 20px";
 
-
       div2.append(name, price, select);
 
       card.append(img, div2);
@@ -237,8 +236,7 @@
     });
   }
 
-
-displayPrice();
+  displayPrice();
 
   function displayPrice() {
     document.querySelector("#otherInfos").innerHTML = "";
@@ -340,7 +338,7 @@ displayPrice();
       checkOut.style.marginTop = "20px";
       checkOut.style.marginBottom = "20px";
       checkOut.style.border = "0px";
-      checkOut.addEventListener("click",paidTheBill)
+      checkOut.addEventListener("click", paidTheBill);
 
       td5.style.fontWeight = "bold";
       td6.style.fontWeight = "bold";
@@ -357,11 +355,10 @@ displayPrice();
     });
   }
 
-  function paidTheBill(){
+  function paidTheBill() {
     alert("Payment Successful");
-    localStorage.setItem("cartData",JSON.stringify([]));
-    window.location.href = "./cart.html"
+    localStorage.setItem("cartData", JSON.stringify([]));
+    window.location.href = "./cart.html";
   }
-
 </script>
 <script src="./script/common.js"></script>

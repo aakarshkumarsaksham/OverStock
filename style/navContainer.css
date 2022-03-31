@@ -28,6 +28,13 @@ padding: 10px 5px;
 
 }
 
+#head{
+  position: sticky;
+  background-color: #dadcdf;
+  top: 0;
+  padding-bottom: 0.25px;
+}
+
 header *{
 cursor: default;
 }

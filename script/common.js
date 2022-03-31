@@ -46,3 +46,8 @@ document.querySelector("nav > ul:nth-child(3) > li.crimson").addEventListener("c
 document.querySelector("#user-account").addEventListener("click",function(){
     window.location.href = "../login.html";
 })
+
+var userName = localStorage.getItem("userName");
+if(userName !== null){
+    document.querySelector("#tooltip > ul > li:nth-child(1) > h2").innerHTML = `Hi, ${userName}`;
+}

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up & Login</title>
     <script
-    src="https://kit.fontawesome.com/e9a5a74c45.js"
-    crossorigin="anonymous"
-  ></script>
-  <link rel="stylesheet" href="./style/login.css" />
-  <link rel="stylesheet" href="./style/common.css" />
-</head>
-<body>
-  <div id="head">
+      src="https://kit.fontawesome.com/e9a5a74c45.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/login.css" />
+    <link rel="stylesheet" href="./style/common.css" />
+  </head>
+  <body>
+    <div id="head">
       <header>
         <svg height="32" width="181" color="#FF1F2C" viewBox="0 0 164 29">
           <g fill="none" fill-rule="evenodd">
@@ -110,148 +110,208 @@
     <main>
       <div id="container">
         <div id="createAccount">
-            <h3>Create Account</h3>
-            <br>
-            <br>
-            <form action="" id="form1">
-                <p>Email Address*</p>
-                <input type="email" id="sign-email" placeholder="Email"\>
-                <br>
-                <br>
-                <div id="cpDiv">
-                    <div>
-                        <span>Create Password*</span>
-                         <input type="password" id="crt-pwd" placeholder="Password"\>
-                   
-                    </div>
-                    <div>
-                        <span>Confirm Password*</span>
-                        <input type="password" id="cfm-pwd" placeholder="Confirm Password"\>
-                    </div>
-                    
-                </div>            
-                <br>
-                <div id="checkBox">
-                    <input type="checkbox"\>
-                    <span>Sign up today for <strong>exclusive offers</strong> from Overstock.com delivered right to your inbox**</span> 
-                </div>
-                <br>
-                <input type="submit" id="btn-ca" value="Create Account"\>
-                <br>
-                <br>
-                <hr>
-                <br>
-                <div class="control">
-                    <button type="submit" id="btn-cg">Continue as Guest</button>
-                    <p id="control-p" >
-                    By creating an account or continuing as a Guest, you agree to our <a href="https://help.overstock.com/app/answers/detail/a_id/63" target="_blank">Terms &amp; Conditions</a> and <a href="https://help.overstock.com/app/answers/detail/a_id/65" target="_blank">Privacy Policy</a>.
-                    </p>
-                </div>
-
-            </form>       
-        </div>
-            
-        <div id="Login">
-            <h3>Sign In</h3>
-            <br>
-            <br>
-            <form action="">            
+          <h3>Create Account</h3>
+          <br />
+          <br />
+          <form action="" id="form1">
+            <p>Name*</p>
+            <input type="text" id="name" placeholder="Name" />
             <p>Email Address*</p>
-            <input type="email" id="log-email" placeholder="Email"\>
-            <p>Password*</p>
-            <input type="password" id="log-pwd" placeholder="Password"\><br>
-            <br>
-            <input type="submit" id="btn-si" value="Sign In">    
-            </form>
-            <br>
-            <center><a class="forgot-pass-link" href="/resetRequest" target="_blank">Forgot your password?</a></center>
+            <input type="email" id="sign-email" placeholder="Email" \ />
+            <br />
+            <br />
+            <div id="cpDiv">
+              <div>
+                <span>Create Password*</span>
+                <input type="password" id="crt-pwd" placeholder="Password" \ />
+              </div>
+              <div>
+                <span>Confirm Password*</span>
+                <input
+                  type="password"
+                  id="cfm-pwd"
+                  placeholder="Confirm Password"
+                />
+              </div>
+            </div>
+            <br />
+            <div id="checkBox">
+              <input type="checkbox" id="checkbox" />
+              <span
+                >Sign up today for <strong>exclusive offers</strong> from
+                Overstock.com delivered right to your inbox**</span
+              >
+            </div>
 
-        </div>             
-              
-    </div>
-    <div id="secureFooter">
+           <button style="margin-top: 5px;" id="btn-ca" type="button">Create Account</button>
+            <div class="control">
+              <button style="width: 100%;"  id="btn-cg">Continue as Guest</button>
+              <p id="control-p">
+                By creating an account or continuing as a Guest, you agree to
+                our
+                <a
+                  href="https://help.overstock.com/app/answers/detail/a_id/63"
+                  target="_blank"
+                  >Terms &amp; Conditions</a
+                >
+                and
+                <a
+                  href="https://help.overstock.com/app/answers/detail/a_id/65"
+                  target="_blank"
+                  >Privacy Policy</a
+                >.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div id="Login">
+          <h3>Sign In</h3>
+          <br />
+          <br />
+          <form action="">
+            <p>Email Address*</p>
+            <input type="email" id="log-email" placeholder="Email" />
+            <p>Password*</p>
+            <input
+              type="password"
+              id="log-pwd"
+              placeholder="Password"
+              \
+            /><br />
+            <br />
+            <button id="btn-si" type="button">Sign In</button>
+          </form>
+          <br />
+          <p style="text-align: center">
+            <a class="forgot-pass-link" href="/resetRequest" target="_blank"
+              >Forgot your password?</a
+            >
+          </p>
+        </div>
+      </div>
+      <div id="secureFooter">
         <div id="topTier">
-        <ul id="helpCenter">
-          <li class="secure-footer-link" id="EasyReturns">
-            <a href="https://help.overstock.com/help/s/article/International-Returns" target="_blank" title="Easy Returns">Return Policy</a>
-          </li>
-          <li class="secure-footer-link" id="ContactCustomerService">
-            <a href="https://help.overstock.com/cgi-bin/overstock.cfg/php/enduser/contact_page.php" target="_blank" title="Contact Customer Service">Contact Customer Care</a>
-          </li>
-          <li class="secure-footer-link" id="FrequentlyAskedQuestions">
-            <a href="https://help.overstock.com/app/answers/detail/a_id/1505" target="_blank" title="Frequently Asked Questions">FAQ</a>
-          </li>
-          <li class="secure-footer-link">
-            <a href="https://help.overstock.com/cgi-bin/overstock.cfg/php/enduser/std_adp.php?p_faqid=65&amp;" title="Privacy Policy" target="_blank" rel="nofollow">Privacy Policy</a>
-          </li>
-          <li class="secure-footer-link">
-            <a href="https://help.overstock.com/cgi-bin/overstock.cfg/php/enduser/std_adp.php?p_faqid=63&amp;" title="Site User Terms &amp; Conditions" target="_blank" rel="nofollow">Site User Terms &amp; Conditions*</a>
-          </li>
-        </ul>
+          <ul id="helpCenter">
+            <li class="secure-footer-link" id="EasyReturns">
+              <a
+                href="https://help.overstock.com/help/s/article/International-Returns"
+                target="_blank"
+                title="Easy Returns"
+                >Return Policy</a
+              >
+            </li>
+            <li class="secure-footer-link" id="ContactCustomerService">
+              <a
+                href="https://help.overstock.com/cgi-bin/overstock.cfg/php/enduser/contact_page.php"
+                target="_blank"
+                title="Contact Customer Service"
+                >Contact Customer Care</a
+              >
+            </li>
+            <li class="secure-footer-link" id="FrequentlyAskedQuestions">
+              <a
+                href="https://help.overstock.com/app/answers/detail/a_id/1505"
+                target="_blank"
+                title="Frequently Asked Questions"
+                >FAQ</a
+              >
+            </li>
+            <li class="secure-footer-link">
+              <a
+                href="https://help.overstock.com/cgi-bin/overstock.cfg/php/enduser/std_adp.php?p_faqid=65&amp;"
+                title="Privacy Policy"
+                target="_blank"
+                rel="nofollow"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="secure-footer-link">
+              <a
+                href="https://help.overstock.com/cgi-bin/overstock.cfg/php/enduser/std_adp.php?p_faqid=63&amp;"
+                title="Site User Terms &amp; Conditions"
+                target="_blank"
+                rel="nofollow"
+                >Site User Terms &amp; Conditions*</a
+              >
+            </li>
+          </ul>
         </div>
         <div id="bottomTier">
-            <ul class="col6span4 sub-links">
-                <li class="copyright">© <!-- Dynamically update year -->
-    <span id="js-curr-year">2022</span><script>document.getElementById("js-curr-year").textContent = new Date().getFullYear();</script> Overstock.com All Rights Reserved</li>
-            </ul>
-        <div class="sLogo_footer">
+          <ul class="col6span4 sub-links">
+            <li class="copyright">
+              ©
+              <!-- Dynamically update year -->
+              <span id="js-curr-year">2022</span>
+              Overstock.com All Rights Reserved
+            </li>
+          </ul>
+          <div class="sLogo_footer">
             <li class="subTitle">We self-certify compliance with:</li>
-               <img src="https://ak1.ostkcdn.com/img/mxc/20200630-intl-privacy_shield.png" alt="We self-certify compliance with Privacy Shield Certified" border="0">
-        </div>
+            <img
+              src="https://ak1.ostkcdn.com/img/mxc/20200630-intl-privacy_shield.png"
+              alt="We self-certify compliance with Privacy Shield Certified"
+            />
+          </div>
         </div>
       </div>
     </main>
-    
-      <footer>
-        <div id="footlinks">
-            <ul>
-                <li><h2>MY ACCOUNT</h2></li>
-                <li>Orders & Returns</li>
-                <li>Email Preferences</li>
-                <li>Account Settings</li>
-            </ul>
-            <ul>
-                <li><h2>LET US HELP</h2></li>
-                <li>Customer Care</li>
-                <li>Shipping Information</li>
-                <li>Return Policy</li>
-                <li>International Help</li>
-                <li>Accessibility</li>
-            </ul>
-            <ul>
-                <li><h2>COMPANY INFORMATION</h2></li>
-                <li>About Overstock™</li>
-                <li>Contact Us</li>
-                <li>Careers</li>
-                <li>Investors Relations</li>
-                <li>Sell Your Products</li>
-                <li>Supply Chain Transparency</li>
-            </ul>
-            <ul>
-                <li><h2>MORE WAYS TO HELP</h2></li>
-                <li>Tips & Ideas</li>
-                <li>Deals</li>
-                <li>Clearance</li>
-                <li>New Arrivals</li>
-            </ul>
+
+    <footer>
+      <div id="footlinks">
+        <ul>
+          <li><h2>MY ACCOUNT</h2></li>
+          <li>Orders & Returns</li>
+          <li>Email Preferences</li>
+          <li>Account Settings</li>
+        </ul>
+        <ul>
+          <li><h2>LET US HELP</h2></li>
+          <li>Customer Care</li>
+          <li>Shipping Information</li>
+          <li>Return Policy</li>
+          <li>International Help</li>
+          <li>Accessibility</li>
+        </ul>
+        <ul>
+          <li><h2>COMPANY INFORMATION</h2></li>
+          <li>About Overstock™</li>
+          <li>Contact Us</li>
+          <li>Careers</li>
+          <li>Investors Relations</li>
+          <li>Sell Your Products</li>
+          <li>Supply Chain Transparency</li>
+        </ul>
+        <ul>
+          <li><h2>MORE WAYS TO HELP</h2></li>
+          <li>Tips & Ideas</li>
+          <li>Deals</li>
+          <li>Clearance</li>
+          <li>New Arrivals</li>
+        </ul>
+      </div>
+      <div id="endCredits">
+        <div id="address">
+          <p>© Copyright 2022, Overstock.com®, Inc.</p>
+          <p>799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
         </div>
-        <div id="endCredits">
-            <div id="address">
-                <p>© Copyright 2022, Overstock.com®, Inc.</p>
-                <p>799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
-            </div>
-            <div id="additionalLinks">
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
-                    <li>*Promotion Terms</li>
-                    <li>Ship To: <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""></li>
-                </ul>
-            </div>
-            
+        <div id="additionalLinks">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>*Promotion Terms</li>
+            <li>
+              Ship To:
+              <img
+                src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
-        </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
 
 <script src="./script/common.js"></script>

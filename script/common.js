@@ -42,3 +42,7 @@ document.querySelector("nav > ul:nth-child(1) > li:nth-child(11)").addEventListe
 document.querySelector("nav > ul:nth-child(3) > li.crimson").addEventListener("click",function(){
     window.location.href = "../restagcards.html";
 })
+
+document.querySelector("#user-account").addEventListener("click",function(){
+    window.location.href = "../login.html";
+})

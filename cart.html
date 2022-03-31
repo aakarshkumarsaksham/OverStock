@@ -13,6 +13,7 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="loading"></div>
     <header>
       <svg height="32" width="181" color="#FF1F2C" viewBox="0 0 164 29">
         <g fill="none" fill-rule="evenodd">
@@ -92,7 +93,8 @@
         <li>Decor</li>
         <li>Bed & Bath</li>
         <li>Home Improvement</li>
-        <li>Kitchen Outdoor</li>
+        <li>Kitchen</li>
+        <li>Outdoor</li>
         <li>Jewelry</li>
         <li>Lighting</li>
         <li>Kids & Baby</li>
@@ -403,7 +405,7 @@
   }
 
   function paymentPage(total) {
-    console.log(total);
+    window.location.href = "./payment.html";
   }
 </script>
 

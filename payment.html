@@ -40,17 +40,22 @@
         <p>Account</p>
         <div id="tooltip">
           <ul>
-            <li class="fullWidth"><h2>Sign In
+            <li class="fullWidth">
+              <h2>
+                Sign In
                 <i class="fa-solid fa-chevron-right"></i>
-
-            </h2></li>
+              </h2>
+            </li>
 
             <li>View your account and check your order status.</li>
           </ul>
           <ul>
-            <li class="fullWidth"><h2>Create An Account
+            <li class="fullWidth">
+              <h2>
+                Create An Account
                 <i class="fa-solid fa-chevron-right"></i>
-            </h2></li>
+              </h2>
+            </li>
             <li>Track orders, save items to lists and more!</li>
           </ul>
           <ul>
@@ -103,62 +108,260 @@
     <!-- main content starts from here -->
 
     <main>
-        <div id="bill">
-
-        </div>
+      <p style="width: 90%; margin: auto; font-size: 28px">Payment Page</p>
+      <div id="container">
+        <div id="cartList"></div>
+        <div id="otherInfos"></div>
+      </div>
     </main>
 
     <!-- main content ends here -->
     <footer>
       <div id="footlinks">
-          <ul>
-              <li><h2>MY ACCOUNT</h2></li>
-              <li>Orders & Returns</li>
-              <li>Email Preferences</li>
-              <li>Account Settings</li>
-          </ul>
-          <ul>
-              <li><h2>LET US HELP</h2></li>
-              <li>Customer Care</li>
-              <li>Shipping Information</li>
-              <li>Return Policy</li>
-              <li>International Help</li>
-              <li>Accessibility</li>
-          </ul>
-          <ul>
-              <li><h2>COMPANY INFORMATION</h2></li>
-              <li>About Overstock™</li>
-              <li>Contact Us</li>
-              <li>Careers</li>
-              <li>Investors Relations</li>
-              <li>Sell Your Products</li>
-              <li>Supply Chain Transparency</li>
-          </ul>
-          <ul>
-              <li><h2>MORE WAYS TO HELP</h2></li>
-              <li>Tips & Ideas</li>
-              <li>Deals</li>
-              <li>Clearance</li>
-              <li>New Arrivals</li>
-          </ul>
+        <ul>
+          <li><h2>MY ACCOUNT</h2></li>
+          <li>Orders & Returns</li>
+          <li>Email Preferences</li>
+          <li>Account Settings</li>
+        </ul>
+        <ul>
+          <li><h2>LET US HELP</h2></li>
+          <li>Customer Care</li>
+          <li>Shipping Information</li>
+          <li>Return Policy</li>
+          <li>International Help</li>
+          <li>Accessibility</li>
+        </ul>
+        <ul>
+          <li><h2>COMPANY INFORMATION</h2></li>
+          <li>About Overstock™</li>
+          <li>Contact Us</li>
+          <li>Careers</li>
+          <li>Investors Relations</li>
+          <li>Sell Your Products</li>
+          <li>Supply Chain Transparency</li>
+        </ul>
+        <ul>
+          <li><h2>MORE WAYS TO HELP</h2></li>
+          <li>Tips & Ideas</li>
+          <li>Deals</li>
+          <li>Clearance</li>
+          <li>New Arrivals</li>
+        </ul>
       </div>
       <div id="endCredits">
-          <div id="address">
-              <p>© Copyright 2022, Overstock.com®, Inc.</p>
-              <p>799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
-          </div>
-          <div id="additionalLinks">
-              <ul>
-                  <li>Privacy Policy</li>
-                  <li>Terms & Conditions</li>
-                  <li>*Promotion Terms</li>
-                  <li>Ship To: <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""></li>
-              </ul>
-          </div>
-          
+        <div id="address">
+          <p>© Copyright 2022, Overstock.com®, Inc.</p>
+          <p>799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</p>
+        </div>
+        <div id="additionalLinks">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>*Promotion Terms</li>
+            <li>
+              Ship To:
+              <img
+                src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
 </html>
+<script>
+   var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+  // console.log(cartData);
+  displayData(cartData);
+  function displayData(cartData) {
+    document.querySelector("#cartList").innerHTML = "";
+    if (cartData.length == 0) {
+      var card = document.createElement("div");
+      card.style.height = "260px";
+      card.style.padding = "20px";
 
+      var emptyText = document.createElement("div");
+      emptyText.innerText = "Your cart is empty.";
+      emptyText.style.height = "100%";
+      emptyText.style.width = "100%";
+      emptyText.style.display = "flex";
+      emptyText.style.alignItems = "center";
+      emptyText.style.justifyContent = "center";
+      emptyText.style.fontSize = "24px";
+
+      card.append(emptyText);
+
+      document.querySelector("#cartList").append(card);
+    }
+
+    cartData.map(function (el, i) {
+      // this is for cartList
+
+      var card = document.createElement("div");
+      card.style.height = "260px";
+      card.style.padding = "20px";
+
+      var img = document.createElement("img");
+      img.src = el.img;
+
+      var div2 = document.createElement("div");
+
+      var name = document.createElement("p");
+      name.innerText = el.name;
+
+      var price = document.createElement("h2");
+      price.innerText = `Sale INR ${el.price}`;
+      price.style.color = "#ac1b25";
+      price.style.fontSize = "20px";
+      price.style.margin = "20px 0 40px";
+
+      var select = document.createElement("div");
+
+      select.style.width = "fit-content";
+      // select.style.margin = "20px 0";
+      select.innerText = `Quantity: ${el.qty}`;
+      select.style.backgroundColor = "green";
+      select.style.color = "white";
+      select.style.padding = "10px 20px";
+
+
+      div2.append(name, price, select);
+
+      card.append(img, div2);
+      document.querySelector("#cartList").append(card);
+
+      // this is for otherInfos
+    });
+  }
+
+
+displayPrice();
+
+  function displayPrice() {
+    document.querySelector("#otherInfos").innerHTML = "";
+    var cartData = JSON.parse(localStorage.getItem("cartData"));
+    // console.log(cartData);
+
+    var total = cartData.reduce(function (a, b) {
+      return (a += b.price * b.qty);
+    }, 0);
+
+    var count = cartData.reduce(function (a, b) {
+      return (a += b.qty);
+    }, 0);
+    if (cartData.length == 0) {
+      var table = document.createElement("table");
+      var tr1 = document.createElement("tr");
+      var td1 = document.createElement("td");
+      td1.style.fontWeight = "bold";
+      var td2 = document.createElement("td");
+      td2.style.fontWeight = "bold";
+
+      td1.innerText = `(0) Items:`;
+      td2.innerText = `INR 0`;
+
+      var tr2 = document.createElement("tr");
+      var td3 = document.createElement("td");
+      var td4 = document.createElement("td");
+      td3.innerText = "Promotional Savings:";
+      td4.innerText = "-INR 0";
+      td4.style.color = "#c7202c";
+
+      var tr3 = document.createElement("tr");
+      var td5 = document.createElement("td");
+      var td6 = document.createElement("td");
+      td5.innerText = "Subtotal After Discounts:";
+      td6.innerText = `INR 0`;
+
+      var checkOut = document.createElement("button");
+      checkOut.innerHTML = "Check Out";
+      checkOut.style.color = "white";
+      checkOut.style.backgroundColor = "black";
+      checkOut.style.width = "100%";
+      checkOut.style.padding = "10px";
+      checkOut.style.fontSize = "20px";
+      checkOut.style.marginTop = "20px";
+      checkOut.style.marginBottom = "20px";
+      checkOut.addEventListener("click", function () {
+        alert("Your cart is empty.");
+      });
+
+      td5.style.fontWeight = "bold";
+      td6.style.fontWeight = "bold";
+
+      var finalPrice = document.createElement("h2");
+      finalPrice.style.textAlign = "center";
+      finalPrice.style.marginTop = "20px";
+      finalPrice.innerText = `Your Total: INR 0`;
+      tr1.append(td1, td2);
+      tr2.append(td3, td4);
+      tr3.append(td5, td6);
+      table.append(tr1, tr2, tr3);
+      document.querySelector("#otherInfos").append(table, finalPrice, checkOut);
+    }
+
+    // console.log(count);
+    cartData.map(function () {
+      document.querySelector("#otherInfos").innerHTML = "";
+
+      var table = document.createElement("table");
+      var tr1 = document.createElement("tr");
+      var td1 = document.createElement("td");
+      td1.style.fontWeight = "bold";
+      var td2 = document.createElement("td");
+      td2.style.fontWeight = "bold";
+
+      td1.innerText = `(${count}) Items:`;
+      td2.innerText = `INR ${total}`;
+
+      var tr2 = document.createElement("tr");
+      var td3 = document.createElement("td");
+      var td4 = document.createElement("td");
+      td3.innerText = "Promotional Savings:";
+      td4.innerText = "-INR 0";
+      td4.style.color = "#c7202c";
+
+      var tr3 = document.createElement("tr");
+      var td5 = document.createElement("td");
+      var td6 = document.createElement("td");
+      td5.innerText = "Subtotal After Discounts:";
+      td6.innerText = `INR ${total}`;
+
+      var checkOut = document.createElement("button");
+      checkOut.innerHTML = `Pay INR ${total}`;
+      checkOut.style.color = "white";
+      checkOut.style.backgroundColor = "green";
+      checkOut.style.width = "100%";
+      checkOut.style.padding = "10px";
+      checkOut.style.fontSize = "20px";
+      checkOut.style.marginTop = "20px";
+      checkOut.style.marginBottom = "20px";
+      checkOut.style.border = "0px";
+      checkOut.addEventListener("click",paidTheBill)
+
+      td5.style.fontWeight = "bold";
+      td6.style.fontWeight = "bold";
+
+      var finalPrice = document.createElement("h2");
+      finalPrice.style.textAlign = "center";
+      finalPrice.style.marginTop = "20px";
+      finalPrice.innerText = `Your Total: INR ${total}`;
+      tr1.append(td1, td2);
+      tr2.append(td3, td4);
+      tr3.append(td5, td6);
+      table.append(tr1, tr2, tr3);
+      document.querySelector("#otherInfos").append(table, finalPrice, checkOut);
+    });
+  }
+
+  function paidTheBill(){
+    alert("Payment Successful");
+    localStorage.setItem("cartData",JSON.stringify([]));
+    window.location.href = "./cart.html"
+  }
+
+</script>
 <script src="./script/common.js"></script>

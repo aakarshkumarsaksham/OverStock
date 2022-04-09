@@ -60,7 +60,7 @@ This is a team project built by us in the construct week of Unit - 2 at Masai Sc
 
 ### Checkout Page
 
-![Checkout Page](https://miro.medium.com/max/1400/1*ZeFhq582GecPqqd_oOTPRw.jpeg)
+![Checkout Page](https://miro.medium.com/max/875/1*ZeFhq582GecPqqd_oOTPRw.jpeg)
 
 ### Payment Page
 

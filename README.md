@@ -9,7 +9,7 @@ This is a team project built by us in the construct week of Unit - 2 at Masai Sc
 
 ## Our Team Members :
 
-*  [Rohit Kumar](https://github.com/blissinthedark)
+*  [Rohit Kumar](https://github.com/rohitkumar6324)
 *  [Ritesh Kumar Jha](https://github.com/Riteshkumarjha98)
 *  [Shubham Kumar](https://github.com/codeirax)
 *  [Sandip Suryawanshi](https://github.com/Sandipgit2999)

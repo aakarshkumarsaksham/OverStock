@@ -1,4 +1,4 @@
-
+It's a clone of the e-commerce website "overcart.com" with all the functionalities of the original One.
 # Overstock.com Clone Project
 
 Overstock.com, Inc. is an American internet retailer selling primarily furniture headquartered in Midvale, Utah, near Salt Lake City. Patrick M. Byrne founded Overstock.com in 1999. The company initially sold exclusively surplus and returned merchandise on an online e-commerce marketplace, liquidating the inventories of at least 18 failed dot-com companies at below-wholesale prices. The company continues to sell home decor, furniture, bedding, and many other goods that are closeout merchandise, however, it also sells new merchandise.

@@ -1,7 +1,7 @@
 
 # Overstock.com Clone Project
 
-Overstock.com, Inc. is an American internet retailer selling primarily furniture headquartered in Midvale, Utah, near Salt Lake City. Patrick M. Byrne founded Overstock.com in 1999. The company initially sold exclusively surplus and returned merchandise on an online e-commerce marketplace, liquidating the inventories of at least 18 failed dot-com companies at below-wholesale prices. The company continues to sell home decor, furniture, bedding, and many other goods that are closeout merchandise, however, it also sells new merchandise.
+Overstock.com, Inc. is an American internet retailer selling primarily furniture headquartered in Midvale, Utah, near Salt Lake City. Patrick M. Byrne founded Overstock.com in 1999. The company initially sold exclusively surplus and returned merchandise on an online e-commerce marketplace, liquidating the inventories of at least 18 failed dot-com companies at below-wholesale prices. The company continues to sell home decor, furniture, bedding, and many other goods that are closeout merchandise, however, it also sells new merchandises.
 
 # About this Project :
 
@@ -82,4 +82,4 @@ This is a team project built by us in the construct week of Unit - 2 at Masai Sc
 
 * Our skills in JavaScript and DOM manipulation became better.
 
-* We all learned how to plan a project and execute that.
+* We all learned how to plan project and execution.

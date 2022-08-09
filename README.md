@@ -83,3 +83,5 @@ This is a team project built by us in the construct week of Unit - 2 at Masai Sc
 * Our skills in JavaScript and DOM manipulation became better.
 
 * We all learned how to plan project and execution.
+## Diploy On Netlifly
+[https://jade-sopapillas-ac0a87.netlify.app/](https://jade-sopapillas-ac0a87.netlify.app/)
